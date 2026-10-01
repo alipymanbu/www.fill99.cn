@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MagicLight.ai - AI 故事视频生成平台 | 一个想法，一部完整影片</title>
+  <meta name="description" content="MagicLight.ai 把你的想法、剧本或故事变成最长 50 分钟的完整 AI 视频：角色全程一致、20+ 视觉风格、37 种旁白音色、11 种语言口型同步。免费试用，无需信用卡。">
+  <link rel="icon" href="assets/img/logo-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,900;1,9..144,700;1,9..144,900&family=IBM+Plex+Mono:wght@500&family=Noto+Serif+SC:wght@700;900&family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- ======================== 导航 ======================== -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="logo" href="index.html" aria-label="MagicLight.ai 首页">
+        <img src="assets/img/logo-icon.png" alt="MagicLight.ai Logo">
+        <span class="logo-text">MagicLight<em>.ai</em></span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="index.html">首页</a>
+        <a href="download.html">下载安装</a>
+        <a href="index.html#modes">创作模式</a>
+        <a href="index.html#how">工作流</a>
+        <a href="index.html#faq">常见问题</a>
+        <a class="btn btn-ink btn-sm nav-cta" href="#" data-link="download">获取安装文件资源</a>
+      </nav>
+      <button class="nav-burger" aria-label="打开菜单"><span></span></button>
+    </div>
+  </header>
+
+  <!-- ======================== Hero ======================== -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="hero-badge">✦ 新一代 AI 故事视频引擎 · 免费试用，无需信用卡</div>
+        <h1 class="hero-title">一个想法，<br>一部<span class="hl">完整影片</span></h1>
+        <p class="hero-sub">MagicLight.ai 把文字、剧本或灵感变成最长 <b>50 分钟</b>的成片：自动分镜、角色全程一致、配音字幕齐备——为「讲完整的故事」而生，而不是 10 秒碎片。</p>
+        <div class="hero-actions">
+          <a class="btn btn-ink btn-lg" href="#" data-link="download">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7L8 5z"/></svg>
+            获取安装文件资源
+          </a>
+          <a class="btn btn-ghost btn-lg" href="download.html">查看获取方式</a>
+        </div>
+        <p class="hero-note">NO CREDIT CARD · 支持中文在内 11 种语言 · 1080P 输出</p>
+        <div class="hero-stats">
+          <div class="hstat"><b><span data-count="2000" data-suffix="万+">0</span></b><span>全球创作者</span></div>
+          <div class="hstat"><b><span data-count="3000" data-suffix="万+">0</span></b><span>已生成视频</span></div>
+          <div class="hstat"><b><span data-count="5000" data-suffix="万+">0</span></b><span>视频总分钟数</span></div>
+        </div>
+      </div>
+
+      <div class="prompt-stack">
+        <div class="float-card fc-1"><span class="fi">🎬</span>最长 50 分钟成片</div>
+        <div class="float-card fc-2"><span class="fi">🎭</span>角色全程一致</div>
+        <div class="float-card fc-3"><span class="fi">🌍</span>11 种语言口型同步</div>
+        <div class="prompt-box">
+          <div class="prompt-bar"><i></i><i></i><i></i><span>magiclight · story-to-video</span></div>
+          <div class="prompt-body">
+            <p class="prompt-text"><span id="promptText"></span><span class="caret"></span></p>
+          </div>
+          <div class="prompt-foot">
+            <span class="prompt-chip on">模型 GPT-5.6</span>
+            <span class="prompt-chip">风格 皮克斯</span>
+            <span class="prompt-chip">旁白 治愈系</span>
+            <a class="btn btn-primary btn-sm prompt-send" href="#" data-link="download">获取资源 ✦</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 风格跑马灯 ======================== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>皮克斯风 <i>✦</i> 迪士尼风 <i>✦</i> 水彩绘本 <i>✦</i> 日式动漫 <i>✦</i> 电影质感 <i>✦</i> 3D 卡通 <i>✦</i> 剪纸拼贴 <i>✦</i> 漫画分格 <i>✦</i> 治愈涂色 <i>✦</i> 墨彩国风 <i>✦</i></span>
+      <span>皮克斯风 <i>✦</i> 迪士尼风 <i>✦</i> 水彩绘本 <i>✦</i> 日式动漫 <i>✦</i> 电影质感 <i>✦</i> 3D 卡通 <i>✦</i> 剪纸拼贴 <i>✦</i> 漫画分格 <i>✦</i> 治愈涂色 <i>✦</i> 墨彩国风 <i>✦</i></span>
+    </div>
+  </div>
+
+  <!-- ======================== 演示视频 ======================== -->
+  <section class="section" id="demo" style="padding-top:70px;">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <div class="eyebrow">Demo</div>
+        <h2 class="section-title">60 秒，看 AI 讲完<em>一个故事</em></h2>
+      </div>
+      <div class="demo-wrap" data-reveal>
+        <video class="demo-video" controls muted loop playsinline preload="metadata"
+               poster="assets/img/official-poster.jpg" src="assets/video/official-promo.mp4"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 创作模式 ======================== -->
+  <section class="section" id="modes">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <div class="eyebrow">Creation Modes</div>
+        <h2 class="section-title">七大创作模式，<em>一个平台</em>全搞定</h2>
+        <p class="section-sub">从儿童睡前故事到品牌广告片，选一种模式，剩下的交给 AI。</p>
+      </div>
+
+      <div class="mode-grid">
+        <div class="mode-card" data-reveal>
+          <div class="mode-media"><img src="assets/img/mode-kids.jpg" alt="儿童故事模式" loading="lazy"></div>
+          <div class="mode-body"><h3>📚 儿童故事</h3><p>色彩明亮的适龄动画，睡前频道与教育平台的首选。</p></div>
+        </div>
+        <div class="mode-card" data-reveal data-delay="1">
+          <div class="mode-media"><img src="assets/img/mode-oneclick.jpg" alt="一键成片模式" loading="lazy"></div>
+          <div class="mode-body"><h3>⚡ 一键成片</h3><p>输入一个想法，直出完整多场景视频，零剪辑基础。</p></div>
+        </div>
+        <div class="mode-card" data-reveal data-delay="2">
+          <div class="mode-media"><img src="assets/img/mode-cartoon.webp" alt="动画卡通模式" loading="lazy"></div>
+          <div class="mode-body"><h3>🎨 动画卡通</h3><p>无需手绘，把故事变成流畅的多场景动画。</p></div>
+        </div>
+        <div class="mode-card" data-reveal data-delay="3">
+          <div class="mode-media"><img src="assets/img/mode-image2video.jpg" alt="图生视频模式" loading="lazy"></div>
+          <div class="mode-body"><h3>🖼️ 图生视频</h3><p>让插画、漫画与照片动起来，静态作品秒变短片。</p></div>
+        </div>
+        <div class="mode-card" data-reveal>
+          <div class="mode-media"><img src="assets/img/mode-explainer.jpg" alt="讲解视频模式" loading="lazy"></div>
+          <div class="mode-body"><h3>💡 讲解视频</h3><p>把复杂概念讲得清楚又好看，课程与产品演示利器。</p></div>
+        </div>
+        <div class="mode-card" data-reveal data-delay="1">
+          <div class="mode-media"><img src="assets/img/mode-jingles.jpg" alt="音乐 MV 模式" loading="lazy"></div>
+          <div class="mode-body"><h3>🎵 音乐 MV</h3><p>让音乐拥有会讲故事的画面，独立音乐人零预算出片。</p></div>
+        </div>
+        <div class="mode-card" data-reveal data-delay="2">
+          <div class="mode-media"><img src="assets/img/mode-religious.webp" alt="信仰故事模式" loading="lazy"></div>
+          <div class="mode-body"><h3>🙏 信仰故事</h3><p>经文叙事与寓言的庄重表达，专为信仰内容创作者设计。</p></div>
+        </div>
+        <a class="mode-card" href="download.html" data-reveal data-delay="3">
+          <div class="mode-body" style="display:grid; place-items:center; text-align:center; min-height:210px;">
+            <div>
+              <h3 style="justify-content:center;">还有更多工具</h3>
+              <p>10+ 创作、编辑与本地化工具，<br>在下载页查看获取方式 →</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 工作流 ======================== -->
+  <section class="section" id="how" style="padding-top:40px;">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <div class="eyebrow">Workflow</div>
+        <h2 class="section-title">从灵感到成片，只要<em>四步</em></h2>
+      </div>
+
+      <div class="steps-flow">
+        <div class="card step-card" data-reveal>
+          <div class="step-num">1</div>
+          <h3>描述你的故事</h3>
+          <p>输入创意、类型或完整剧本，支持 12000 字长文提示词，不用把想法拦腰砍断。</p>
+        </div>
+        <div class="card step-card" data-reveal data-delay="1">
+          <div class="step-num">2</div>
+          <h3>选模型与风格</h3>
+          <p>9 种故事模型（GPT-5.6、Claude Opus 4.6 等）、20+ 视觉风格、37 种音色自由搭配。</p>
+        </div>
+        <div class="card step-card" data-reveal data-delay="2">
+          <div class="step-num">3</div>
+          <h3>精修分镜</h3>
+          <p>Nano Storyboard 逐场景调整表情、动作、服装与镜头，先满意再渲染。</p>
+        </div>
+        <div class="card step-card" data-reveal data-delay="3">
+          <div class="step-num">4</div>
+          <h3>预览与发布</h3>
+          <p>1080P 导出，封面自动生成，一键发布到 TikTok、YouTube 与更多平台。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 核心特性 Bento ======================== -->
+  <section class="section" id="highlights" style="padding-top:40px;">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <div class="eyebrow">Why MagicLight</div>
+        <h2 class="section-title">为「完整影片」而生，<em>而不是片段</em></h2>
+      </div>
+
+      <div class="bento">
+        <div class="card b-full" data-reveal>
+          <div>
+            <div class="b-icon">🎬</div>
+            <h3>场景级分镜编辑器</h3>
+            <p>每个场景独立可调：表情、体型、姿势、服装、镜头与节奏，先精修再渲染，成片即所见。50 组姿势与服装随时套用，场景顺序拖拽重排。</p>
+            <div class="b-tags"><span>Nano Storyboard</span><span>50 组姿势</span><span>场景重排</span><span>智能节奏</span></div>
+          </div>
+          <div class="fig sb-mock">
+            <div class="sb-head"><span>NANO STORYBOARD</span><span>12 scenes · 03:42</span></div>
+            <div class="sb-row">
+              <div class="sb-cell"><img src="assets/img/mode-kids.jpg" alt=""><i>SC 01</i></div>
+              <div class="sb-cell on"><img src="assets/img/cards-stack-1.jpg" alt=""><i>SC 02</i></div>
+              <div class="sb-cell"><img src="assets/img/mode-cartoon.webp" alt=""><i>SC 03</i></div>
+            </div>
+            <div class="sb-tl"><i style="width:34%"></i><i style="width:18%"></i><i style="width:41%"></i></div>
+          </div>
+        </div>
+
+        <div class="card b-wide" data-reveal>
+          <div class="b-icon">🎭</div>
+          <h3>一致角色引擎</h3>
+          <p>角色在 50 分钟里始终是同一个「人」：长相、服装、性格跨场景保持连续，这是多数 AI 视频工具至今做不到的事。</p>
+          <div class="b-tags"><span>角色连续性</span><span>可复用角色</span></div>
+        </div>
+
+        <div class="card b-wide" data-reveal data-delay="1">
+          <div class="b-icon">🌍</div>
+          <h3>11 种语言全球配音</h3>
+          <p>口型同步的多语言旁白，日语、韩语、西语受众一键触达，不用重新配音重拍。</p>
+          <div class="b-tags"><span>口型同步</span><span>一键本地化</span></div>
+        </div>
+
+        <div class="card b-wide" data-reveal>
+          <div class="b-icon">🎙️</div>
+          <h3>37 种音色 · 40 轨配乐</h3>
+          <p>恐怖故事和睡前故事，各有对味的声线；16 种字幕样式与海量配乐库，氛围一步到位。</p>
+          <div class="b-tags"><span>37 种旁白</span><span>16 种字幕</span></div>
+        </div>
+
+        <div class="card b-wide" data-reveal data-delay="1">
+          <div class="b-icon">🤖</div>
+          <h3>19 个视频引擎</h3>
+          <p>Veo 3.1、Sora 2 等主流引擎汇入同一条工作流，不同故事切换不同动感风格。</p>
+          <div class="b-tags"><span>Veo 3.1</span><span>Sora 2</span><span>持续上新</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 数据带 ======================== -->
+  <section class="stats-band">
+    <div class="container stats-grid">
+      <div class="stat-cell"><b><span data-count="2000" data-suffix="万+">0</span></b><span>全球创作者</span></div>
+      <div class="stat-cell"><b><span data-count="3000" data-suffix="万+">0</span></b><span>已生成视频</span></div>
+      <div class="stat-cell"><b><span data-count="5000" data-suffix="万+">0</span></b><span>视频总分钟数</span></div>
+      <div class="stat-cell"><b>50<span style="font-size:.5em;"> 分钟</span></b><span>单条视频最长成片</span></div>
+    </div>
+  </section>
+
+  <!-- ======================== 人群标签页 ======================== -->
+  <section class="section" id="audience">
+    <div class="container">
+      <div class="section-head" data-reveal>
+        <div class="eyebrow">Use Cases</div>
+        <h2 class="section-title">创作者们用它讲<em>什么故事</em>？</h2>
+      </div>
+
+      <div class="tabs" data-reveal>
+        <button class="tab-btn on" data-tab="creators" type="button">自媒体创作者</button>
+        <button class="tab-btn" data-tab="edu" type="button">教育工作者</button>
+        <button class="tab-btn" data-tab="writer" type="button">小说作家</button>
+        <button class="tab-btn" data-tab="brand" type="button">品牌营销</button>
+      </div>
+
+      <div class="tab-panel on" id="panel-creators">
+        <ul>
+          <li>批量产出每日短视频，全程不碰时间线</li>
+          <li>系列角色跨集保持一致，频道更有辨识度</li>
+          <li>自动加字幕与配乐，内容更快发布</li>
+          <li>用故事模板快速起量垂类内容</li>
+        </ul>
+        <div class="tab-fig"><img src="assets/img/cards-stack-1.jpg" alt="创作者作品示例" loading="lazy"></div>
+      </div>
+      <div class="tab-panel" id="panel-edu">
+        <ul>
+          <li>课程大纲一键变成配音讲解视频</li>
+          <li>把 PDF 与讲义变成孩子爱看的动画</li>
+          <li>为不同年龄段调整故事语气与节奏</li>
+          <li>复杂知识点自动生成角色演示</li>
+        </ul>
+        <div class="tab-fig"><img src="assets/img/cards-stack-2.jpg" alt="教育内容示例" loading="lazy"></div>
+      </div>
+      <div class="tab-panel" id="panel-writer">
+        <ul>
+          <li>整章草稿一气呵成，不再卡在空白页</li>
+          <li>用视频预告片视觉化你的章节</li>
+          <li>多结局快速试错，不用重写全书</li>
+          <li>把角色设定变成可视化的世界观</li>
+        </ul>
+        <div class="tab-fig"><img src="assets/img/cards-stack-3.webp" alt="作家创作示例" loading="lazy"></div>
+      </div>
+      <div class="tab-panel" id="panel-brand">
+        <ul>
+          <li>把 campaign 文案变成故事化广告</li>
+          <li>A/B 变体快速生成，无需拍摄团队</li>
+          <li>卖点更新后，10 分钟重出新版视频</li>
+          <li>产品讲解与品牌故事模板开箱即用</li>
+        </ul>
+        <div class="tab-fig"><img src="assets/img/mode-explainer.jpg" alt="品牌营销示例" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== FAQ ======================== -->
+  <section class="section" id="faq" style="padding-top:40px;">
+    <div class="container">
+      <div class="section-head center" data-reveal>
+        <div class="eyebrow">FAQ</div>
+        <h2 class="section-title">常见问题</h2>
+      </div>
+
+      <div class="faq-list">
+        <div class="card faq-item" data-reveal>
+          <button class="faq-q" type="button">需要付费才能用吗？<span class="fx">＋</span></button>
+          <div class="faq-a"><p>免费即可开始创作，无需绑定信用卡；当你需要更长成片、更高分辨率或更多导出时，再按平台公布的定价按需升级。</p></div>
+        </div>
+        <div class="card faq-item" data-reveal>
+          <button class="faq-q" type="button">视频最长能做多长？<span class="fx">＋</span></button>
+          <div class="faq-a"><p>单条视频最长 50 分钟，并且角色形象与剧情逻辑全程保持一致——这正是 MagicLight 与「只出 10 秒片段」工具的根本区别。</p></div>
+        </div>
+        <div class="card faq-item" data-reveal>
+          <button class="faq-q" type="button">不会画画、不会剪辑，能用吗？<span class="fx">＋</span></button>
+          <div class="faq-a"><p>可以。从提示词到分镜、配音、字幕、成片全程自动完成；想精修时，Nano Storyboard 提供零基础的可视化编辑，所见即所得。</p></div>
+        </div>
+        <div class="card faq-item" data-reveal>
+          <button class="faq-q" type="button">支持中文吗？<span class="fx">＋</span></button>
+          <div class="faq-a"><p>支持。中文可直出故事与旁白，平台另外提供 11 种语言的口型同步本地化，一条故事面向全球观众。</p></div>
+        </div>
+        <div class="card faq-item" data-reveal>
+          <button class="faq-q" type="button">生成的内容可以发布到哪些平台？<span class="fx">＋</span></button>
+          <div class="faq-a"><p>支持 1080P 导出与多比例输出（竖版 / 宽屏），适配 TikTok、YouTube、抖音等平台；封面模板自动生成，发布前无需再修图。商用授权请以其服务条款为准。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CTA ======================== -->
+  <div class="cta-wrap">
+    <div class="container">
+      <div class="cta-panel" data-reveal>
+        <h2>你下一个故事，值得一部长片。<br>一切，从一句话开始。</h2>
+        <p>获取安装文件资源，60 秒生成你的第一支故事视频。</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary btn-lg" href="#" data-link="download">获取安装文件资源</a>
+          <a class="btn btn-ghost btn-lg" href="download.html">查看获取方式</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======================== Footer ======================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a class="logo" href="index.html">
+            <img src="assets/img/logo-icon.png" alt="MagicLight.ai Logo">
+            <span class="logo-text">MagicLight<em>.ai</em></span>
+          </a>
+          <p>世界领先的 AI 故事视频生成平台。把想象力变成结构完整、角色一致、随时可发布的成片。</p>
+        </div>
+        <div class="footer-links">
+          <div>
+            <h4>本页导航</h4>
+            <a href="download.html">下载安装</a>
+            <a href="index.html#modes">创作模式</a>
+            <a href="index.html#how">工作流</a>
+          </div>
+          <div>
+            <h4>支持</h4>
+            <a href="index.html#faq">常见问题</a>
+            <a href="download.html">获取安装文件资源</a>
+          </div>
+          <div>
+            <h4>说明</h4>
+            <a href="index.html">首页</a>
+            <a href="download.html#faq">下载相关问答</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-base">
+        <span>本页面为 MagicLight.ai 的第三方介绍与说明页 · 展示素材来自公开资料，版权归原作者所有</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/links.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
